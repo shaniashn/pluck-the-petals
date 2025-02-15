@@ -1,5 +1,6 @@
 <template>
   <section class="all-flower">
+  <h2>pluck the petals</h2>
     <div class="flower">
     <!-- <div class="core-petal"><img src="./assets/core-petal.svg" alt="core-petal"></div> -->
      <div class="flower-ex"><img src="./assets/image.png" alt=""></div>
@@ -35,6 +36,5 @@ export default {
 .flower-ex img:hover {
   transform: rotate(360deg);
 }
-
 
 </style>
