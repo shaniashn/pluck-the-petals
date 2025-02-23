@@ -2,8 +2,8 @@
   <section class="all-flower">
   <h2>pluck the petals</h2>
     <div class="flower">
-    <!-- <div class="core-petal"><img src="./assets/core-petal.svg" alt="core-petal"></div> -->
-     <div class="flower-ex"><img src="./assets/image.png" alt=""></div>
+     <div class="flower-addition"><img src="./assets/flower-addition-.svg" alt=""></div>
+     <div class="flower-core"><img src="./assets/flower-core.svg" alt=""></div>
   </div>
   </section>
 </template>
@@ -16,24 +16,42 @@ export default {
 
 <style>
 .all-flower {
+  overflow: hidden;
   height: 100vh;
-  display: grid;
-  align-items: center;
 }
 
 .flower {
-  margin: auto 0;
-  /* background-color: aqua; */
-}
-.core-petal {
-  width: 10%;
+  /* background-color: rgb(0, 255, 255, 0.5); */
+  width: 100%;
+  height: 100%;
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.flower-ex img {
+.flower .flower-core {
+  /* margin: auto 0; */
+  width: 30%;
+  /* background-color: rgb(0, 55, 255, 0.5); */
+  /* position: relative; */
+  
+  position: absolute;
+}
+
+.flower .flower-addition {
+  width: 50%;
+  transform: translateX(50%);
+  /* justify-content: end; */
+  position: absolute;
+  bottom: 0;
+}
+
+.flower-core img {
   transition: transform 2s ease-in-out;
 }
 
-.flower-ex img:hover {
+.flower-core img:hover {
   transform: rotate(360deg);
 }
 
