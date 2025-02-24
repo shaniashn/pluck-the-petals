@@ -45,14 +45,33 @@ export default {
   /* justify-content: end; */
   position: absolute;
   bottom: 0;
+  /* transition: transform 2s ease-in; */
 }
 
 .flower-core img {
-  transition: transform 2s ease-in-out;
+  transition: transform 2s ease-in;
+  /* background-color: black; */
+  transform: rotate(360deg), rotate(90deg);
 }
 
 .flower-core img:hover {
-  transform: rotate(360deg);
+  /* transform: rotate(360deg); */
+  /* background-color: aqua; */
+  /* animation: rotateFlower 2s infinite; */
+}
+
+@keyframes rotateFlower {
+  0% {
+    transform: rotate(0deg);;
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);;
+  }
 }
 
 </style>
