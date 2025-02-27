@@ -3,8 +3,20 @@
     <h2>pluck the petals</h2>
     <div class="flower">
       <div class="flower-addition"><img src="./assets/flower-addition-.svg" alt=""></div>
+      <div class="pollens">
+      <div class="pollen"></div>
+      <div class="pollen"></div>
+      <div class="pollen"></div>
+      <div class="pollen"></div>
+      <div class="pollen"></div>
+      <div class="pollen"></div>
+      <div class="pollen"></div>
+      <div class="pollen"></div>
+    </div>
       <div class="flower-core"><img src="./assets/flower-core.svg" alt=""></div>
     </div>
+
+    
   </section>
 </template>
 
@@ -16,7 +28,7 @@ export default {
 
 <style lang="scss">
 .all-flower {
-  overflow: hidden;
+  // overflow: hidden;
   height: 100vh;
 
   .flower {
@@ -45,6 +57,22 @@ export default {
       transform: translateX(50%);
       position: absolute;
       bottom: 0;
+    }
+  }
+
+  .pollens {
+    // position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    // z-index: -1;
+
+    .pollen {
+      width: 0.5%;
+      aspect-ratio: 1/1;
+
+      margin-bottom: 10px;
+      background-color: yellow;
     }
   }
 }
